@@ -1,0 +1,294 @@
+aid: brave-browser
+url: https://raw.githubusercontent.com/api-evangelist/brave-browser/refs/heads/main/apis.yml
+name: Brave
+kind: company
+description: >-
+  Brave Software builds a privacy-first Chromium-based browser, an independent
+  search engine (Brave Search), an in-browser AI assistant (Leo), a video
+  conferencing product (Brave Talk), an opt-in attention economy (Brave
+  Rewards / Basic Attention Token), a wallet (Brave Wallet), and a privacy
+  advertising platform (Brave Ads). Developer-facing APIs are concentrated in
+  the Brave Search API (api.search.brave.com), which exposes web, news,
+  image, video, suggest, spellcheck, summarizer, and local POI endpoints
+  authenticated via X-Subscription-Token. Browser code is open source under
+  MPL-2.0 on GitHub.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Browser
+  - Search
+  - Privacy
+  - Chromium
+  - Web3
+  - AI
+  - Advertising
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: brave-browser:browser
+    name: Brave Browser
+    description: >-
+      Privacy-first Chromium-based browser for Windows, macOS, Linux, Android,
+      and iOS, with built-in tracker and ad blocking (Brave Shields), HTTPS
+      upgrades, Global Privacy Control, and a Tor-enabled private window on
+      desktop. Open source under MPL-2.0.
+    humanURL: https://brave.com/
+    baseURL: https://github.com/brave/brave-browser
+    tags:
+      - Browser
+      - Chromium
+      - Open Source
+    properties:
+      - type: Repository
+        url: https://github.com/brave/brave-browser
+  - aid: brave-browser:search
+    name: Brave Search
+    description: >-
+      Independent privacy-respecting web search engine backed by Brave's own
+      index. Surfaces the consumer product at search.brave.com and powers the
+      Brave Search API.
+    humanURL: https://search.brave.com/
+    baseURL: https://search.brave.com/
+    tags:
+      - Search
+      - Web
+    properties:
+      - type: Website
+        url: https://search.brave.com/
+  - aid: brave-browser:search-api-web
+    name: Brave Search API - Web Search
+    description: >-
+      REST endpoint for general web search results with country, language,
+      safe-search, and freshness filtering. Authenticated via
+      X-Subscription-Token header.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/web/search
+    tags:
+      - Search API
+      - Web Search
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-images
+    name: Brave Search API - Image Search
+    description: >-
+      Image search endpoint returning images with metadata, thumbnails, and
+      SafeSearch filtering.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/images/search
+    tags:
+      - Search API
+      - Image Search
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-videos
+    name: Brave Search API - Video Search
+    description: >-
+      Video search endpoint returning videos with thumbnails, duration, and
+      source metadata.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/videos/search
+    tags:
+      - Search API
+      - Video Search
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-news
+    name: Brave Search API - News Search
+    description: >-
+      Real-time news search endpoint returning articles from trusted sources
+      with freshness filtering.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/news/search
+    tags:
+      - Search API
+      - News
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-suggest
+    name: Brave Search API - Suggest
+    description: >-
+      Autosuggest endpoint that returns query completions for a partial input.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/suggest/search
+    tags:
+      - Search API
+      - Autosuggest
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-spellcheck
+    name: Brave Search API - Spellcheck
+    description: >-
+      Spelling correction endpoint for refining noisy or misspelled user
+      queries.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/spellcheck/search
+    tags:
+      - Search API
+      - Spellcheck
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-summarizer
+    name: Brave Search API - Summarizer
+    description: >-
+      AI summarizer endpoint that condenses search results into a generated
+      summary for use in agentic and AI-grounded applications.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/summarizer/search
+    tags:
+      - Search API
+      - Summarizer
+      - AI
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-local-pois
+    name: Brave Search API - Local POIs
+    description: >-
+      Local search endpoint returning point-of-interest details given IDs
+      surfaced by web search results.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/local/pois
+    tags:
+      - Search API
+      - Local
+      - POI
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-api-local-descriptions
+    name: Brave Search API - Local Descriptions
+    description: >-
+      AI-generated descriptions for local points of interest, complementing
+      the Local POIs endpoint.
+    humanURL: https://api-dashboard.search.brave.com/app/documentation
+    baseURL: https://api.search.brave.com/res/v1/local/descriptions
+    tags:
+      - Search API
+      - Local
+      - AI
+    properties:
+      - type: Documentation
+        url: https://api-dashboard.search.brave.com/app/documentation
+  - aid: brave-browser:search-mcp
+    name: Brave Search MCP Server
+    description: >-
+      Model Context Protocol server wrapping the Brave Search API so AI agents
+      can ground answers in real-time web results.
+    humanURL: https://github.com/brave/brave-search-mcp-server
+    baseURL: https://github.com/brave/brave-search-mcp-server
+    tags:
+      - MCP
+      - AI
+      - Search
+    properties:
+      - type: Repository
+        url: https://github.com/brave/brave-search-mcp-server
+  - aid: brave-browser:leo
+    name: Brave Leo AI
+    description: >-
+      In-browser AI assistant offering chat, summarization, translation, and
+      content generation grounded in the page or tab the user is viewing.
+      Surfaced inside the browser; not a public REST API.
+    humanURL: https://brave.com/leo/
+    baseURL: https://brave.com/leo/
+    tags:
+      - AI
+      - Assistant
+    properties:
+      - type: Website
+        url: https://brave.com/leo/
+  - aid: brave-browser:talk
+    name: Brave Talk
+    description: >-
+      End-to-end encrypted video conferencing product, available free with
+      premium tier for larger meetings.
+    humanURL: https://brave.com/talk/
+    baseURL: https://talk.brave.com/
+    tags:
+      - Video
+      - Conferencing
+    properties:
+      - type: Website
+        url: https://brave.com/talk/
+  - aid: brave-browser:rewards
+    name: Brave Rewards
+    description: >-
+      Opt-in attention rewards program paying users in Basic Attention Token
+      (BAT) for viewing privacy-preserving ads, and enabling tipping of
+      verified creators.
+    humanURL: https://brave.com/rewards/
+    baseURL: https://brave.com/rewards/
+    tags:
+      - Rewards
+      - BAT
+      - Web3
+    properties:
+      - type: Website
+        url: https://brave.com/rewards/
+  - aid: brave-browser:ads
+    name: Brave Ads
+    description: >-
+      Privacy-respecting advertising platform for advertisers that targets
+      anonymized cohorts inside the Brave browser and on Brave Search.
+    humanURL: https://brave.com/brave-ads/
+    baseURL: https://brave.com/brave-ads/
+    tags:
+      - Advertising
+      - Privacy
+    properties:
+      - type: Website
+        url: https://brave.com/brave-ads/
+  - aid: brave-browser:wallet
+    name: Brave Wallet
+    description: >-
+      Native multi-chain crypto wallet built into the Brave browser. Supports
+      EVM and Solana networks; integrates with WalletConnect and dApps.
+    humanURL: https://brave.com/wallet/
+    baseURL: https://brave.com/wallet/
+    tags:
+      - Wallet
+      - Web3
+    properties:
+      - type: Website
+        url: https://brave.com/wallet/
+  - aid: brave-browser:news
+    name: Brave News
+    description: >-
+      Privacy-preserving news feed integrated into the browser's new tab page,
+      sourced from a curated set of publisher feeds.
+    humanURL: https://brave.com/brave-news/
+    baseURL: https://brave.com/brave-news/
+    tags:
+      - News
+      - Content
+    properties:
+      - type: Website
+        url: https://brave.com/brave-news/
+common:
+  - type: Website
+    url: https://brave.com/
+  - type: Search
+    url: https://search.brave.com/
+  - type: Documentation
+    url: https://api-dashboard.search.brave.com/app/documentation
+  - type: GitHub
+    url: https://github.com/brave
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/brave-software-
+  - type: Twitter
+    url: https://twitter.com/brave
+integrations:
+  - name: Chromium Extensions
+  - name: WalletConnect
+  - name: Ethereum
+  - name: Solana
+  - name: Model Context Protocol
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
