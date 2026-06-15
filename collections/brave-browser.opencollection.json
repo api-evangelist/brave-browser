@@ -1,0 +1,419 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Brave Search API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Subscription-Token",
+      "value": "{{X-Subscription-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Web",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Web search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/web/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query",
+                "description": "Search query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Two-character country code"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query",
+                "description": "ISO 639-1 language code"
+              },
+              {
+                "name": "ui_lang",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "safesearch",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "freshness",
+                "value": "",
+                "type": "query",
+                "description": "pd, pw, pm, py or custom range"
+              },
+              {
+                "name": "extra_snippets",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "text_decorations",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Query Brave's web search index."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "News",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "News search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/news/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "freshness",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "safesearch",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "News search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Images",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Image search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/images/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "safesearch",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Image search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Videos",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Video search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/videos/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ui_lang",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "safesearch",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "freshness",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Video search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Suggest",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Suggestion API",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/suggest/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Suggestion API"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Spellcheck",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Spellcheck API",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/spellcheck/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "lang",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Spellcheck API"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Summarizer",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Summarizer API",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/summarizer/search",
+            "params": [
+              {
+                "name": "key",
+                "value": "",
+                "type": "query",
+                "description": "Summarizer key returned from /web/search"
+              },
+              {
+                "name": "entity_info",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve AI-generated summary for a query returning a summarizer key from web search."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Local",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Local POI search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/local/pois",
+            "params": [
+              {
+                "name": "ids",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ui_lang",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve local point-of-interest details by IDs (up to 20)."
+        },
+        {
+          "info": {
+            "name": "Local descriptions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/local/descriptions",
+            "params": [
+              {
+                "name": "ids",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "AI-generated descriptions for local POIs by IDs."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

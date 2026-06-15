@@ -1,0 +1,1268 @@
+{
+  "item": [
+    {
+      "id": "79752bbe-2b98-454e-b029-6b4eb347d909",
+      "name": "Web",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "83fc4d8d-d449-451c-a8ab-cd5b5234fcab",
+          "name": "Web search",
+          "request": {
+            "name": "Web search",
+            "description": {
+              "content": "Query Brave's web search index.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "web",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) Search query"
+                },
+                {
+                  "disabled": false,
+                  "key": "count",
+                  "value": "20"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>",
+                  "description": "Two-character country code"
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>",
+                  "description": "ISO 639-1 language code"
+                },
+                {
+                  "disabled": false,
+                  "key": "ui_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "safesearch",
+                  "value": "moderate"
+                },
+                {
+                  "disabled": false,
+                  "key": "freshness",
+                  "value": "<string>",
+                  "description": "pd, pw, pm, py or custom range"
+                },
+                {
+                  "disabled": false,
+                  "key": "extra_snippets",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "text_decorations",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "23044268-9c2f-4bb7-aa2c-6a42f25649c6",
+              "name": "Search results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "web",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "count",
+                      "value": "20"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "0"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ui_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "safesearch",
+                      "value": "moderate"
+                    },
+                    {
+                      "key": "freshness",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extra_snippets",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "text_decorations",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"query\": {\n    \"original\": \"string\",\n    \"more_results_available\": false\n  },\n  \"web\": {\n    \"results\": [\n      {\n        \"title\": \"string\",\n        \"url\": \"https://rijfvPxaih.pcjY3DwaAeRwY2AKi3jQ4Ou6Ir10aQMZmOVv\",\n        \"description\": \"string\",\n        \"age\": \"string\",\n        \"extra_snippets\": [\n          \"string\",\n          \"string\"\n        ]\n      },\n      {\n        \"title\": \"string\",\n        \"url\": \"http://xchkYrDbYdttRlaJOdvt.lvvzyDU\",\n        \"description\": \"string\",\n        \"age\": \"string\",\n        \"extra_snippets\": [\n          \"string\",\n          \"string\"\n        ]\n      }\n    ]\n  },\n  \"mixed\": {},\n  \"infobox\": {},\n  \"news\": {},\n  \"videos\": {},\n  \"type\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "08e22800-6e24-4455-b3c3-4bb6a685ef84",
+      "name": "News",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a6fb7b53-1ff2-484c-bed1-4314c6b8aa24",
+          "name": "News search",
+          "request": {
+            "name": "News search",
+            "description": {},
+            "url": {
+              "path": [
+                "news",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "count",
+                  "value": "20"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "freshness",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "safesearch",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "20342f4d-ddb1-4c55-a20f-93aef2d13595",
+              "name": "News results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "news",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "count",
+                      "value": "20"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "0"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "freshness",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "safesearch",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "26eedfa5-60ce-4bbf-82d0-a64eef0f2af0",
+      "name": "Images",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6941e454-34e6-4f2d-af10-6f612cb29894",
+          "name": "Image search",
+          "request": {
+            "name": "Image search",
+            "description": {},
+            "url": {
+              "path": [
+                "images",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "count",
+                  "value": "50"
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "safesearch",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "598fca29-dd47-466a-9df8-19e1f92e1287",
+              "name": "Image results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "images",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "count",
+                      "value": "50"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "safesearch",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "a6e5b2c8-b533-4e97-95aa-07d2a7f0ab2d",
+      "name": "Videos",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a9f50066-2602-45d0-9b4d-dc32ced1acbd",
+          "name": "Video search",
+          "request": {
+            "name": "Video search",
+            "description": {},
+            "url": {
+              "path": [
+                "videos",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "count",
+                  "value": "20"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ui_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "safesearch",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "freshness",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2f5a3b66-2447-471f-95a6-acfd9d27b9c2",
+              "name": "Video results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "videos",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "count",
+                      "value": "20"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "0"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ui_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "safesearch",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "freshness",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "8e6abb70-fa35-4152-bc1b-93a1347f47c9",
+      "name": "Suggest",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "4c86da21-7894-47aa-9b77-40f5e0a831ea",
+          "name": "Suggestion API",
+          "request": {
+            "name": "Suggestion API",
+            "description": {},
+            "url": {
+              "path": [
+                "suggest",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "count",
+                  "value": "5"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bb23a34d-ac31-431c-ad5c-1be3169e9ae2",
+              "name": "Suggestions",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "suggest",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "count",
+                      "value": "5"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "783ac1d8-e1b0-442d-abef-793833939e57",
+      "name": "Spellcheck",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "64af5d9a-0bbf-42a8-b032-c625a9277f45",
+          "name": "Spellcheck API",
+          "request": {
+            "name": "Spellcheck API",
+            "description": {},
+            "url": {
+              "path": [
+                "spellcheck",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "lang",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "719a84b2-deee-4755-966b-7cae2d4b5f90",
+              "name": "Spellcheck suggestions",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "spellcheck",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lang",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "ae07f708-9d37-4e61-8c6d-5db76d85b9f6",
+      "name": "Summarizer",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7fd478e9-f439-4c6a-9634-87c774504e27",
+          "name": "Summarizer API",
+          "request": {
+            "name": "Summarizer API",
+            "description": {
+              "content": "Retrieve AI-generated summary for a query returning a summarizer key from web search.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "summarizer",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "key",
+                  "value": "<string>",
+                  "description": "(Required) Summarizer key returned from /web/search"
+                },
+                {
+                  "disabled": false,
+                  "key": "entity_info",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5415324b-87dd-404b-bd50-97435e2f51d7",
+              "name": "Summary",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "summarizer",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "entity_info",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "cbbde861-a965-426d-89c1-88e64fad34e5",
+      "name": "Local",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7fa510b8-3705-42aa-8304-d4c61df107d5",
+          "name": "Local POI search",
+          "request": {
+            "name": "Local POI search",
+            "description": {
+              "content": "Retrieve local point-of-interest details by IDs (up to 20).",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "local",
+                "pois"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "ids",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "ids",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ui_lang",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "53dee921-8fb5-4c1c-82ea-8a6bc79dd778",
+              "name": "POI details",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "local",
+                    "pois"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ui_lang",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "232b1622-f16a-4e7f-8c23-a7c9f3275bf5",
+          "name": "Local descriptions",
+          "request": {
+            "name": "Local descriptions",
+            "description": {
+              "content": "AI-generated descriptions for local POIs by IDs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "local",
+                "descriptions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "ids",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "ids",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "972c4ff8-56a3-4f3a-9569-6daab9ae1e9e",
+              "name": "Descriptions",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "local",
+                    "descriptions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.search.brave.com/res/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Subscription-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "29cc1b6a-3bd1-4722-8c06-156a77458d20",
+    "name": "Brave Search API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.\n\nContact Support:\n Name: Brave Search API",
+      "type": "text/plain"
+    }
+  }
+}
