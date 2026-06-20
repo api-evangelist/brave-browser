@@ -12,7 +12,7 @@ description: >-
   image, video, suggest, spellcheck, summarizer, and local POI endpoints
   authenticated via X-Subscription-Token. Browser code is open source under
   MPL-2.0 on GitHub.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Browser
   - Search
