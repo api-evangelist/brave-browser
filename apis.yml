@@ -271,6 +271,12 @@ apis:
       - type: Website
         url: https://brave.com/brave-news/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/brave-browser-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/brave-browser-domain-security.yml
+  - type: Authentication
+    url: authentication/brave-browser-authentication.yml
   - type: Website
     url: https://brave.com/
   - type: Search
@@ -283,6 +289,8 @@ common:
     url: https://www.linkedin.com/company/brave-software-
   - type: Twitter
     url: https://twitter.com/brave
+  - url: https://brave.com/blog/index.xml
+    type: Blog
 integrations:
   - name: Chromium Extensions
   - name: WalletConnect

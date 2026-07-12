@@ -1,0 +1,34 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: brave.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 19 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: search.brave.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 30 23:59:59 2026 GMT
+  hsts: null
+- host: api-dashboard.search.brave.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan 23 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: brave.com
+  dnssec: true
+  caa:
+  - 0 issuemail ";"
+  - 0 issuewild "amazon.com"
+  - 0 issuewild "letsencrypt.org"
+  - 0 iodef "mailto:security@brave.com"
+  - 0 issue "amazon.com"
+  - 0 issue "digicert.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
