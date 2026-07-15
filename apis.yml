@@ -271,6 +271,8 @@ apis:
       - type: Website
         url: https://brave.com/brave-news/
 common:
+  - type: AgenticAccess
+    url: agentic-access/brave-browser-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/brave-browser-vulnerability-disclosure.yml
   - type: DomainSecurity
