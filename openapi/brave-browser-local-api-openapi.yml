@@ -1,0 +1,84 @@
+openapi: 3.1.0
+info:
+  title: Brave Search Images Local API
+  description: The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.
+  version: '1.0'
+  contact:
+    name: Brave Search API
+    url: https://api-dashboard.search.brave.com/app/documentation
+servers:
+- url: https://api.search.brave.com/res/v1
+  description: Production API
+security:
+- SubscriptionToken: []
+tags:
+- name: Local
+paths:
+  /local/pois:
+    get:
+      summary: Local POI search
+      description: Retrieve local point-of-interest details by IDs (up to 20).
+      operationId: localPois
+      tags:
+      - Local
+      parameters:
+      - name: ids
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+          maxItems: 20
+        style: form
+        explode: true
+      - name: search_lang
+        in: query
+        schema:
+          type: string
+      - name: ui_lang
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: POI details
+          content:
+            application/json:
+              schema:
+                type: object
+  /local/descriptions:
+    get:
+      summary: Local descriptions
+      description: AI-generated descriptions for local POIs by IDs.
+      operationId: localDescriptions
+      tags:
+      - Local
+      parameters:
+      - name: ids
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+          maxItems: 20
+        style: form
+        explode: true
+      - name: search_lang
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Descriptions
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    SubscriptionToken:
+      type: apiKey
+      in: header
+      name: X-Subscription-Token

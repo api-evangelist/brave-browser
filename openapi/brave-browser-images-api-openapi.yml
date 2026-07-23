@@ -1,0 +1,62 @@
+openapi: 3.1.0
+info:
+  title: Brave Search Images API
+  description: The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.
+  version: '1.0'
+  contact:
+    name: Brave Search API
+    url: https://api-dashboard.search.brave.com/app/documentation
+servers:
+- url: https://api.search.brave.com/res/v1
+  description: Production API
+security:
+- SubscriptionToken: []
+tags:
+- name: Images
+paths:
+  /images/search:
+    get:
+      summary: Image search
+      operationId: imageSearch
+      tags:
+      - Images
+      parameters:
+      - name: q
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: count
+        in: query
+        schema:
+          type: integer
+          default: 50
+          maximum: 100
+      - name: country
+        in: query
+        schema:
+          type: string
+      - name: search_lang
+        in: query
+        schema:
+          type: string
+      - name: safesearch
+        in: query
+        schema:
+          type: string
+          enum:
+          - false
+          - strict
+      responses:
+        '200':
+          description: Image results
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    SubscriptionToken:
+      type: apiKey
+      in: header
+      name: X-Subscription-Token

@@ -1,0 +1,51 @@
+openapi: 3.1.0
+info:
+  title: Brave Search Images Suggest API
+  description: The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.
+  version: '1.0'
+  contact:
+    name: Brave Search API
+    url: https://api-dashboard.search.brave.com/app/documentation
+servers:
+- url: https://api.search.brave.com/res/v1
+  description: Production API
+security:
+- SubscriptionToken: []
+tags:
+- name: Suggest
+paths:
+  /suggest/search:
+    get:
+      summary: Suggestion API
+      operationId: suggestSearch
+      tags:
+      - Suggest
+      parameters:
+      - name: q
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: country
+        in: query
+        schema:
+          type: string
+      - name: count
+        in: query
+        schema:
+          type: integer
+          default: 5
+          maximum: 20
+      responses:
+        '200':
+          description: Suggestions
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    SubscriptionToken:
+      type: apiKey
+      in: header
+      name: X-Subscription-Token

@@ -1,0 +1,47 @@
+openapi: 3.1.0
+info:
+  title: Brave Search Images Summarizer API
+  description: The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.
+  version: '1.0'
+  contact:
+    name: Brave Search API
+    url: https://api-dashboard.search.brave.com/app/documentation
+servers:
+- url: https://api.search.brave.com/res/v1
+  description: Production API
+security:
+- SubscriptionToken: []
+tags:
+- name: Summarizer
+paths:
+  /summarizer/search:
+    get:
+      summary: Summarizer API
+      description: Retrieve AI-generated summary for a query returning a summarizer key from web search.
+      operationId: summarizer
+      tags:
+      - Summarizer
+      parameters:
+      - name: key
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Summarizer key returned from /web/search
+      - name: entity_info
+        in: query
+        schema:
+          type: boolean
+      responses:
+        '200':
+          description: Summary
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    SubscriptionToken:
+      type: apiKey
+      in: header
+      name: X-Subscription-Token
