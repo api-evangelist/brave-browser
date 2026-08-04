@@ -1,0 +1,28 @@
+{
+  "provider": "brave-browser",
+  "sources": [
+    "brave-browser-images-api-openapi.yml",
+    "brave-browser-local-api-openapi.yml",
+    "brave-browser-news-api-openapi.yml",
+    "brave-browser-spellcheck-api-openapi.yml",
+    "brave-browser-suggest-api-openapi.yml",
+    "brave-browser-summarizer-api-openapi.yml",
+    "brave-browser-videos-api-openapi.yml",
+    "brave-browser-web-api-openapi.yml"
+  ],
+  "outputs": [
+    "brave-browser-images-api-openapi.yml",
+    "brave-browser-local-api-openapi.yml",
+    "brave-browser-news-api-openapi.yml",
+    "brave-browser-spellcheck-api-openapi.yml",
+    "brave-browser-suggest-api-openapi.yml",
+    "brave-browser-summarizer-api-openapi.yml",
+    "brave-browser-videos-api-openapi.yml",
+    "brave-browser-web-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
