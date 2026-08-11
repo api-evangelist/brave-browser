@@ -349,6 +349,13 @@ apis:
       - type: Website
         url: https://brave.com/brave-news/
 common:
+  - type: IssueTracker
+    url: https://github.com/brave/brave-browser/issues
+  - type: Releases
+    url: https://github.com/brave/brave-browser/releases
+  - type: License
+    name: MPL-2.0
+    url: https://github.com/brave/brave-browser/blob/master/LICENSE
   - type: AgenticAccess
     url: agentic-access/brave-browser-agentic-access.yml
   - type: VulnerabilityDisclosure
