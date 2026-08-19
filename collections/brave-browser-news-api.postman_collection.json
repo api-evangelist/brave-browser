@@ -1,0 +1,192 @@
+{
+  "item": [
+    {
+      "id": "75812e4c-2005-41c8-af00-0a53362437e8",
+      "name": "News",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "4f7116a1-12ae-480d-be5d-ecf9ec11b99a",
+          "name": "News search",
+          "request": {
+            "name": "News search",
+            "description": {},
+            "url": {
+              "path": [
+                "news",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "count",
+                  "value": "20"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "freshness",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "safesearch",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9f844689-69ba-4e2e-a7c9-132b3d438376",
+              "name": "News results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "news",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "count",
+                      "value": "20"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "0"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "freshness",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "safesearch",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.search.brave.com/res/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Subscription-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "86f010dd-88e5-4e9e-b686-104c7bc80ea7",
+    "name": "Brave Search Images News API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.\n\nContact Support:\n Name: Brave Search API",
+      "type": "text/plain"
+    }
+  }
+}

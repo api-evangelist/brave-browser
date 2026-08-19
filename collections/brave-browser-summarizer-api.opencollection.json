@@ -1,0 +1,50 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Brave Search Images Summarizer API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Subscription-Token",
+      "value": "{{X-Subscription-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Summarizer",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Summarizer API",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/summarizer/search",
+            "params": [
+              {
+                "name": "key",
+                "value": "",
+                "type": "query",
+                "description": "Summarizer key returned from /web/search"
+              },
+              {
+                "name": "entity_info",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve AI-generated summary for a query returning a summarizer key from web search."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

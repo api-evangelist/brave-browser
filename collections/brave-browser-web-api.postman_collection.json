@@ -1,0 +1,225 @@
+{
+  "item": [
+    {
+      "id": "562c6b10-8b9f-4642-b276-133d860049a2",
+      "name": "Web",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "560541c2-b7f7-4639-846c-e6857739da4f",
+          "name": "Web search",
+          "request": {
+            "name": "Web search",
+            "description": {
+              "content": "Query Brave's web search index.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "web",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "(Required) Search query"
+                },
+                {
+                  "disabled": false,
+                  "key": "count",
+                  "value": "20"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>",
+                  "description": "Two-character country code"
+                },
+                {
+                  "disabled": false,
+                  "key": "search_lang",
+                  "value": "<string>",
+                  "description": "ISO 639-1 language code"
+                },
+                {
+                  "disabled": false,
+                  "key": "ui_lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "safesearch",
+                  "value": "moderate"
+                },
+                {
+                  "disabled": false,
+                  "key": "freshness",
+                  "value": "<string>",
+                  "description": "pd, pw, pm, py or custom range"
+                },
+                {
+                  "disabled": false,
+                  "key": "extra_snippets",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "text_decorations",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3583dae5-eba2-4ae2-94de-3385e2db2c27",
+              "name": "Search results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "web",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "count",
+                      "value": "20"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "0"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "search_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ui_lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "safesearch",
+                      "value": "moderate"
+                    },
+                    {
+                      "key": "freshness",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "extra_snippets",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "text_decorations",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Subscription-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"query\": {\n    \"original\": \"string\",\n    \"more_results_available\": true\n  },\n  \"web\": {\n    \"results\": [\n      {\n        \"title\": \"string\",\n        \"url\": \"https://bKlhJYhz.bataSv09qnE3FngnatM\",\n        \"description\": \"string\",\n        \"age\": \"string\",\n        \"extra_snippets\": [\n          \"string\",\n          \"string\"\n        ]\n      },\n      {\n        \"title\": \"string\",\n        \"url\": \"http://LHhGv.apgpT1.h5Sa5fV\",\n        \"description\": \"string\",\n        \"age\": \"string\",\n        \"extra_snippets\": [\n          \"string\",\n          \"string\"\n        ]\n      }\n    ]\n  },\n  \"mixed\": {},\n  \"infobox\": {},\n  \"news\": {},\n  \"videos\": {},\n  \"type\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.search.brave.com/res/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Subscription-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a58b0198-bb15-4ae9-bf18-af50b24c3a7e",
+    "name": "Brave Search Images Web API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.\n\nContact Support:\n Name: Brave Search API",
+      "type": "text/plain"
+    }
+  }
+}

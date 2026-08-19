@@ -1,0 +1,77 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Brave Search Images Local API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Subscription-Token",
+      "value": "{{X-Subscription-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Local",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Local POI search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/local/pois",
+            "params": [
+              {
+                "name": "ids",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ui_lang",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve local point-of-interest details by IDs (up to 20)."
+        },
+        {
+          "info": {
+            "name": "Local descriptions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.search.brave.com/res/v1/local/descriptions",
+            "params": [
+              {
+                "name": "ids",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search_lang",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "AI-generated descriptions for local POIs by IDs."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
