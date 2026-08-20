@@ -32,6 +32,14 @@ tags:
   - Privacy
   - Chromium
   - Web3
+  - Artificial Intelligence
+  - Advertising
+tags_raw:
+  - Browser
+  - Search
+  - Privacy
+  - Chromium
+  - Web3
   - AI
   - Advertising
 created: '2026-05-23'
@@ -47,6 +55,10 @@ apis:
     humanURL: https://brave.com/
     baseURL: https://github.com/brave/brave-browser
     tags:
+      - Browser
+      - Chromium
+      - Open-Source
+    tags_raw:
       - Browser
       - Chromium
       - Open Source
@@ -132,6 +144,9 @@ apis:
     baseURL: https://api.search.brave.com/res/v1/spellcheck/search
     tags:
       - Search API
+      - Spell Check
+    tags_raw:
+      - Search API
       - Spellcheck
     properties:
       - type: Documentation
@@ -144,6 +159,10 @@ apis:
     humanURL: https://api-dashboard.search.brave.com/app/documentation
     baseURL: https://api.search.brave.com/res/v1/summarizer/search
     tags:
+      - Search API
+      - Summarizer
+      - Artificial Intelligence
+    tags_raw:
       - Search API
       - Summarizer
       - AI
@@ -172,6 +191,10 @@ apis:
     tags:
       - Search API
       - Local
+      - Artificial Intelligence
+    tags_raw:
+      - Search API
+      - Local
       - AI
     properties:
       - type: Documentation
@@ -184,6 +207,10 @@ apis:
     humanURL: https://github.com/brave/brave-search-mcp-server
     baseURL: https://github.com/brave/brave-search-mcp-server
     tags:
+      - MCP
+      - Artificial Intelligence
+      - Search
+    tags_raw:
       - MCP
       - AI
       - Search
@@ -198,6 +225,9 @@ apis:
     humanURL: https://brave.com/leo/
     baseURL: https://brave.com/leo/
     tags:
+      - Artificial Intelligence
+      - Assistant
+    tags_raw:
       - AI
       - Assistant
     properties:
@@ -250,6 +280,9 @@ apis:
     humanURL: https://brave.com/wallet/
     baseURL: https://brave.com/wallet/
     tags:
+      - Wallets
+      - Web3
+    tags_raw:
       - Wallet
       - Web3
     properties:
@@ -261,6 +294,8 @@ apis:
     humanURL: https://brave.com/
     baseURL: https://github.com/brave/brave-browser
     tags:
+      - Image
+    tags_raw:
       - Images
     properties:
       - type: OpenAPI
@@ -291,6 +326,8 @@ apis:
     humanURL: https://brave.com/
     baseURL: https://github.com/brave/brave-browser
     tags:
+      - Spell Check
+    tags_raw:
       - Spellcheck
     properties:
       - type: OpenAPI
