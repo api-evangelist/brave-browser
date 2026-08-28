@@ -12,6 +12,19 @@ description: >-
   image, video, suggest, spellcheck, summarizer, and local POI endpoints
   authenticated via X-Subscription-Token. Browser code is open source under
   MPL-2.0 on GitHub.
+deliveryModel:
+  model: self-hosted
+  license: MPL-2.0
+  open_source: true
+  commercial: false
+  callable_host: true
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: self-serve
