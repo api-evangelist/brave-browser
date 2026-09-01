@@ -157,7 +157,7 @@ apis:
     baseURL: https://api.search.brave.com/res/v1/spellcheck/search
     tags:
       - Search API
-      - Spellcheck
+      - Spell Check
     tags_raw:
       - Search API
       - Spellcheck
@@ -339,7 +339,7 @@ apis:
     humanURL: https://brave.com/
     baseURL: https://github.com/brave/brave-browser
     tags:
-      - Spellcheck
+      - Spell Check
     tags_raw:
       - Spellcheck
     properties:
