@@ -58,9 +58,10 @@ specificationVersion: '0.23'
 apis:
 - aid: brave-browser:browser
   name: Brave Browser
-  description: Privacy-first Chromium-based browser for Windows, macOS, Linux, Android, and iOS, with built-in tracker
-    and ad blocking (Brave Shields), HTTPS upgrades, Global Privacy Control, and a Tor-enabled private window on
-    desktop. Open source under MPL-2.0.
+  description: >-
+    Privacy-first Chromium-based browser for Windows, macOS, Linux, Android, and iOS, with built-in tracker
+    and ad blocking (Brave Shields), HTTPS upgrades, Global Privacy Control, and a Tor-enabled private
+    window on desktop. Open source under MPL-2.0.
   humanURL: https://brave.com/
   baseURL: https://github.com/brave/brave-browser
   tags:
@@ -76,7 +77,8 @@ apis:
     url: https://github.com/brave/brave-browser
 - aid: brave-browser:search
   name: Brave Search
-  description: Independent privacy-respecting web search engine backed by Brave's own index. Surfaces the consumer
+  description: >-
+    Independent privacy-respecting web search engine backed by Brave's own index. Surfaces the consumer
     product at search.brave.com and powers the Brave Search API.
   humanURL: https://search.brave.com/
   baseURL: https://search.brave.com/
@@ -88,7 +90,8 @@ apis:
     url: https://search.brave.com/
 - aid: brave-browser:search-api-web
   name: Brave Search API - Web Search
-  description: REST endpoint for general web search results with country, language, safe-search, and freshness filtering.
+  description: >-
+    REST endpoint for general web search results with country, language, safe-search, and freshness filtering.
     Authenticated via X-Subscription-Token header.
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/web/search
@@ -100,7 +103,8 @@ apis:
     url: https://api-dashboard.search.brave.com/app/documentation
 - aid: brave-browser:search-api-images
   name: Brave Search API - Image Search
-  description: Image search endpoint returning images with metadata, thumbnails, and SafeSearch filtering.
+  description: >-
+    Image search endpoint returning images with metadata, thumbnails, and SafeSearch filtering.
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/images/search
   tags:
@@ -122,7 +126,8 @@ apis:
     url: https://api-dashboard.search.brave.com/app/documentation
 - aid: brave-browser:search-api-news
   name: Brave Search API - News Search
-  description: Real-time news search endpoint returning articles from trusted sources with freshness filtering.
+  description: >-
+    Real-time news search endpoint returning articles from trusted sources with freshness filtering.
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/news/search
   tags:
@@ -158,8 +163,9 @@ apis:
     url: https://api-dashboard.search.brave.com/app/documentation
 - aid: brave-browser:search-api-summarizer
   name: Brave Search API - Summarizer
-  description: AI summarizer endpoint that condenses search results into a generated summary for use in agentic
-    and AI-grounded applications.
+  description: >-
+    AI summarizer endpoint that condenses search results into a generated summary for use in agentic and
+    AI-grounded applications.
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/summarizer/search
   tags:
@@ -175,7 +181,8 @@ apis:
     url: https://api-dashboard.search.brave.com/app/documentation
 - aid: brave-browser:search-api-local-pois
   name: Brave Search API - Local POIs
-  description: Local search endpoint returning point-of-interest details given IDs surfaced by web search results.
+  description: >-
+    Local search endpoint returning point-of-interest details given IDs surfaced by web search results.
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/local/pois
   tags:
@@ -187,7 +194,8 @@ apis:
     url: https://api-dashboard.search.brave.com/app/documentation
 - aid: brave-browser:search-api-local-descriptions
   name: Brave Search API - Local Descriptions
-  description: AI-generated descriptions for local points of interest, complementing the Local POIs endpoint.
+  description: >-
+    AI-generated descriptions for local points of interest, complementing the Local POIs endpoint.
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/local/descriptions
   tags:
@@ -203,7 +211,8 @@ apis:
     url: https://api-dashboard.search.brave.com/app/documentation
 - aid: brave-browser:search-mcp
   name: Brave Search MCP Server
-  description: Model Context Protocol server wrapping the Brave Search API so AI agents can ground answers in real-time
+  description: >-
+    Model Context Protocol server wrapping the Brave Search API so AI agents can ground answers in real-time
     web results.
   humanURL: https://github.com/brave/brave-search-mcp-server
   baseURL: https://github.com/brave/brave-search-mcp-server
@@ -220,7 +229,8 @@ apis:
     url: https://github.com/brave/brave-search-mcp-server
 - aid: brave-browser:leo
   name: Brave Leo AI
-  description: In-browser AI assistant offering chat, summarization, translation, and content generation grounded
+  description: >-
+    In-browser AI assistant offering chat, summarization, translation, and content generation grounded
     in the page or tab the user is viewing. Surfaced inside the browser; not a public REST API.
   humanURL: https://brave.com/leo/
   baseURL: https://brave.com/leo/
@@ -235,7 +245,8 @@ apis:
     url: https://brave.com/leo/
 - aid: brave-browser:talk
   name: Brave Talk
-  description: End-to-end encrypted video conferencing product, available free with premium tier for larger meetings.
+  description: >-
+    End-to-end encrypted video conferencing product, available free with premium tier for larger meetings.
   humanURL: https://brave.com/talk/
   baseURL: https://talk.brave.com/
   tags:
@@ -246,7 +257,8 @@ apis:
     url: https://brave.com/talk/
 - aid: brave-browser:rewards
   name: Brave Rewards
-  description: Opt-in attention rewards program paying users in Basic Attention Token (BAT) for viewing privacy-preserving
+  description: >-
+    Opt-in attention rewards program paying users in Basic Attention Token (BAT) for viewing privacy-preserving
     ads, and enabling tipping of verified creators.
   humanURL: https://brave.com/rewards/
   baseURL: https://brave.com/rewards/
@@ -259,7 +271,8 @@ apis:
     url: https://brave.com/rewards/
 - aid: brave-browser:ads
   name: Brave Ads
-  description: Privacy-respecting advertising platform for advertisers that targets anonymized cohorts inside the
+  description: >-
+    Privacy-respecting advertising platform for advertisers that targets anonymized cohorts inside the
     Brave browser and on Brave Search.
   humanURL: https://brave.com/brave-ads/
   baseURL: https://brave.com/brave-ads/
@@ -271,8 +284,9 @@ apis:
     url: https://brave.com/brave-ads/
 - aid: brave-browser:wallet
   name: Brave Wallet
-  description: Native multi-chain crypto wallet built into the Brave browser. Supports EVM and Solana networks;
-    integrates with WalletConnect and dApps.
+  description: >-
+    Native multi-chain crypto wallet built into the Brave browser. Supports EVM and Solana networks; integrates
+    with WalletConnect and dApps.
   humanURL: https://brave.com/wallet/
   baseURL: https://brave.com/wallet/
   tags:
@@ -370,7 +384,8 @@ apis:
     url: openapi/brave-browser-web-api-openapi.yml
 - aid: brave-browser:news
   name: Brave News
-  description: Privacy-preserving news feed integrated into the browser's new tab page, sourced from a curated set
+  description: >-
+    Privacy-preserving news feed integrated into the browser's new tab page, sourced from a curated set
     of publisher feeds.
   humanURL: https://brave.com/brave-news/
   baseURL: https://brave.com/brave-news/
@@ -382,12 +397,11 @@ apis:
     url: https://brave.com/brave-news/
 - aid: brave-browser:brave-ads-api
   name: Brave Ads API
-  description: 'API for managing and reporting on Brave Ads campaigns. Enables advertisers to retrieve campaign
-    details and performance data for privacy-preserving native browser ads and search ads. Supports customizable
+  description: >
+    API for managing and reporting on Brave Ads campaigns. Enables advertisers to retrieve campaign details
+    and performance data for privacy-preserving native browser ads and search ads. Supports customizable
     reporting dimensions and metrics including impressions, clicks, spend, and conversion tracking. Authentication
     uses API keys generated from the Brave Ads dashboard.
-
-    '
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://ads-help.brave.com/campaign-performance/API/
   baseURL: https://ads-serve.brave.com
@@ -412,186 +426,6 @@ apis:
   - FN: Brave Ads
     url: https://brave.com/brave-ads/
     email: adsales@brave.com
-- aid: brave-browser:brave-campaigns-api
-  name: Brave campaigns API
-  description: Campaign management and hierarchy endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Campaigns
-  tags_raw:
-  - campaigns
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-campaigns-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-images-api
-  name: Brave images API
-  description: Image search endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Image
-  tags_raw:
-  - images
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-images-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-local-api
-  name: Brave local API
-  description: Local place of interest endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Local
-  tags_raw:
-  - local
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-local-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-news-api
-  name: Brave news API
-  description: News search endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - News
-  tags_raw:
-  - news
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-news-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-reporting-api
-  name: Brave reporting API
-  description: Campaign performance reporting endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Reporting
-  tags_raw:
-  - reporting
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-reporting-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-spellcheck-api
-  name: Brave spellcheck API
-  description: Spellcheck endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Spell Check
-  tags_raw:
-  - spellcheck
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-spellcheck-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-suggest-api
-  name: Brave suggest API
-  description: Autosuggest endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Suggest
-  tags_raw:
-  - suggest
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-suggest-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-videos-api
-  name: Brave videos API
-  description: Video search endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Videos
-  tags_raw:
-  - videos
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-videos-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
-- aid: brave-browser:brave-web-api
-  name: Brave web API
-  description: Web search endpoints
-  humanURL: https://brave.com/search/api/
-  baseURL: https://api.search.brave.com/res/v1/
-  tags:
-  - Web
-  tags_raw:
-  - web
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-web-api-openapi.yml
-  - type: Documentation
-    url: https://api-dashboard.search.brave.com/app/documentation/web-search/get-started
-  - type: Pricing
-    url: https://brave.com/search/api/
-  - type: Dashboard
-    url: https://api-dashboard.search.brave.com
-  - type: GitHubRepository
-    url: https://github.com/brave/brave-search-mcp-server
 common:
 - type: IssueTracker
   url: https://github.com/brave/brave-browser/issues
