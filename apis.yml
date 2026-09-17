@@ -330,18 +330,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/brave-browser-news-api-openapi.yml
-- aid: brave-browser:brave-browser-spellcheck-api
-  name: Brave Spellcheck API
-  description: The Spellcheck API from Brave — 1 operation(s) for spellcheck.
-  humanURL: https://brave.com/
-  baseURL: https://github.com/brave/brave-browser
-  tags:
-  - Spell Check
-  tags_raw:
-  - Spellcheck
-  properties:
-  - type: OpenAPI
-    url: openapi/brave-browser-spellcheck-api-openapi.yml
 - aid: brave-browser:brave-browser-suggest-api
   name: Brave Suggest API
   description: The Suggest API from Brave — 1 operation(s) for suggest.
@@ -426,6 +414,16 @@ apis:
   - FN: Brave Ads
     url: https://brave.com/brave-ads/
     email: adsales@brave.com
+- aid: brave-browser:brave-browser-spell-check-api
+  name: Brave Spell Check API
+  description: The Spell Check API from Brave — 1 operation(s) for spell check.
+  humanURL: https://brave.com/
+  baseURL: https://github.com/brave/brave-browser
+  tags:
+  - Spell Check
+  properties:
+  - type: OpenAPI
+    url: openapi/brave-browser-spell-check-api-openapi.yml
 common:
 - type: IssueTracker
   url: https://github.com/brave/brave-browser/issues
