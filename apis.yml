@@ -356,6 +356,8 @@ apis:
   humanURL: https://brave.com/
   baseURL: https://github.com/brave/brave-browser
   tags:
+  - Video
+  tags_raw:
   - Videos
   properties:
   - type: OpenAPI
