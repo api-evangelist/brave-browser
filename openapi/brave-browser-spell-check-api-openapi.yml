@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Brave Search Images Spellcheck API
+  title: Brave Search Spellcheck API
   description: The Brave Search API provides programmatic access to Brave's independent search index covering web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints. Requests authenticate via the X-Subscription-Token header issued through the Brave Search API dashboard.
   version: '1.0'
   contact:
@@ -12,14 +12,14 @@ servers:
 security:
 - SubscriptionToken: []
 tags:
-- name: Spellcheck
+- name: Spell Check
 paths:
   /spellcheck/search:
     get:
       summary: Spellcheck API
       operationId: spellcheck
       tags:
-      - Spellcheck
+      - Spell Check
       parameters:
       - name: q
         in: query

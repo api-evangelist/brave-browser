@@ -1,14 +1,7 @@
 {
   "provider": "brave-browser",
   "sources": [
-    "brave-browser-images-api-openapi.yml",
-    "brave-browser-local-api-openapi.yml",
-    "brave-browser-news-api-openapi.yml",
-    "brave-browser-spellcheck-api-openapi.yml",
-    "brave-browser-suggest-api-openapi.yml",
-    "brave-browser-summarizer-api-openapi.yml",
-    "brave-browser-videos-api-openapi.yml",
-    "brave-browser-web-api-openapi.yml"
+    "_original/brave-browser-openapi.yml"
   ],
   "outputs": [
     "brave-browser-images-api-openapi.yml",
@@ -20,9 +13,33 @@
     "brave-browser-videos-api-openapi.yml",
     "brave-browser-web-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "brave-browser-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "brave-browser-openapi.yml: declared missing tag: Images",
+    "brave-browser-openapi.yml: declared missing tag: Local",
+    "brave-browser-openapi.yml: declared missing tag: News",
+    "brave-browser-openapi.yml: declared missing tag: Spellcheck",
+    "brave-browser-openapi.yml: declared missing tag: Suggest",
+    "brave-browser-openapi.yml: declared missing tag: Summarizer",
+    "brave-browser-openapi.yml: declared missing tag: Videos",
+    "brave-browser-openapi.yml: declared missing tag: Web",
+    "superseded outputs removed: brave-browser-spell-check-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 27 total)"
+  ],
+  "skipped": [
+    "brave-browser-images-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "brave-browser-local-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "brave-browser-news-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "brave-browser-spell-check-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "brave-browser-suggest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "brave-browser-summarizer-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "brave-browser-videos-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "brave-browser-web-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
