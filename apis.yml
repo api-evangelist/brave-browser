@@ -67,11 +67,12 @@ apis:
   tags:
   - Browser
   - Chromium
-  - Open-Source
+  - Open Source
   tags_raw:
   - Browser
   - Chromium
   - Open Source
+  - Open-Source
   properties:
   - type: Repository
     url: https://github.com/brave/brave-browser
@@ -228,6 +229,7 @@ apis:
   - type: Repository
     url: https://github.com/brave/brave-search-mcp-server
 - aid: brave-browser:leo
+  x-published: false
   name: Brave Leo AI
   description: >-
     In-browser AI assistant offering chat, summarization, translation, and content generation grounded
