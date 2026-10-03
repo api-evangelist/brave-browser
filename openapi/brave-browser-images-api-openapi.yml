@@ -45,7 +45,7 @@ paths:
         schema:
           type: string
           enum:
-          - false
+          - 'off'
           - strict
       responses:
         '200':

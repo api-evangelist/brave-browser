@@ -59,7 +59,7 @@ paths:
         schema:
           type: string
           enum:
-          - false
+          - 'off'
           - moderate
           - strict
           default: moderate

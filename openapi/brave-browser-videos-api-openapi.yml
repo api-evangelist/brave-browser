@@ -54,7 +54,7 @@ paths:
         schema:
           type: string
           enum:
-          - false
+          - 'off'
           - moderate
           - strict
       - name: freshness
