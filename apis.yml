@@ -429,6 +429,12 @@ apis:
   - type: OpenAPI
     url: openapi/brave-browser-spell-check-api-openapi.yml
 common:
+- type: Pricing
+  url: https://ads.brave.com/
+- type: RateLimits
+  url: rate-limits/brave-browser-rate-limits.yml
+- type: FinOps
+  url: finops/brave-browser-finops.yml
 - type: Plans
   url: plans/brave-browser-plans-pricing.yml
 - type: IssueTracker
