@@ -9,6 +9,13 @@
       "method": "feed"
     },
     {
+      "source": "https://brave.com/blog/",
+      "feed_url": "https://brave.com/blog/index.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
       "source": "https://api-dashboard.search.brave.com/app/documentation/web-search/get-started",
       "feed_url": "https://api-dashboard.search.brave.com/app/documentation/web-search/get-started",
       "title": "",
@@ -16,7 +23,7 @@
       "method": "none"
     }
   ],
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 38,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
