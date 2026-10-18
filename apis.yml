@@ -97,6 +97,9 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/web/search
   tags:
+  - SERP
+  - Web Search
+  tags_raw:
   - Search API
   - Web Search
   properties:
@@ -109,6 +112,9 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/images/search
   tags:
+  - SERP
+  - Image Search
+  tags_raw:
   - Search API
   - Image Search
   properties:
@@ -120,6 +126,9 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/videos/search
   tags:
+  - SERP
+  - Video Search
+  tags_raw:
   - Search API
   - Video Search
   properties:
@@ -132,6 +141,9 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/news/search
   tags:
+  - SERP
+  - News
+  tags_raw:
   - Search API
   - News
   properties:
@@ -143,6 +155,9 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/suggest/search
   tags:
+  - SERP
+  - Autosuggest
+  tags_raw:
   - Search API
   - Autosuggest
   properties:
@@ -154,7 +169,7 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/spellcheck/search
   tags:
-  - Search API
+  - SERP
   - Spell Check
   tags_raw:
   - Search API
@@ -170,7 +185,7 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/summarizer/search
   tags:
-  - Search API
+  - SERP
   - Summarizer
   - Artificial Intelligence
   tags_raw:
@@ -187,6 +202,10 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/local/pois
   tags:
+  - SERP
+  - Local
+  - POI
+  tags_raw:
   - Search API
   - Local
   - POI
@@ -200,7 +219,7 @@ apis:
   humanURL: https://api-dashboard.search.brave.com/app/documentation
   baseURL: https://api.search.brave.com/res/v1/local/descriptions
   tags:
-  - Search API
+  - SERP
   - Local
   - Artificial Intelligence
   tags_raw:
