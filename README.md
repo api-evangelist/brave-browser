@@ -1,4 +1,4 @@
-# Brave (brave-browser)
+# Brave
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,359 +66,152 @@
 
 Brave Software builds a privacy-first Chromium-based browser, an independent search engine (Brave Search), an in-browser AI assistant (Leo), a video conferencing product (Brave Talk), an opt-in attention economy (Brave Rewards / Basic Attention Token), a wallet (Brave Wallet), and a privacy advertising platform (Brave Ads). Developer-facing APIs are concentrated in the Brave Search API (api.search.brave.com), which exposes web, news, image, video, suggest, spellcheck, summarizer, and local POI endpoints authenticated via X-Subscription-Token. Browser code is open source under MPL-2.0 on GitHub.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/brave-browser/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/brave-browser/refs/heads/main/apis.yml)
+**Areas:** Browser · Search · Privacy · Chromium · Web3 · Artificial Intelligence · Advertising
 
-## Tags
+## Brave on APIs.io
 
-- Browser
-- Search
-- Privacy
-- Chromium
-- Web3
-- AI
-- Advertising
+Everything profiled for Brave is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/brave-browser/](https://apis.io/providers/brave-browser/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (27)
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+- [Brave Browser](https://apis.io/apis/brave-browser/browser/) — Privacy-first Chromium-based browser for Windows, macOS, Linux, Android, and iOS, with built-in tracker and ad blocking (Brave Shields), HTTPS upgrades,…
+- [Brave Search](https://apis.io/apis/brave-browser/search/) — Independent privacy-respecting web search engine backed by Brave's own index. Surfaces the consumer product at search.brave.com and powers the Brave Search API.
+- [Brave Search API - Web Search](https://apis.io/apis/brave-browser/search-api-web/) — REST endpoint for general web search results with country, language, safe-search, and freshness filtering. Authenticated via X-Subscription-Token header.
+- [Brave Search API - Image Search](https://apis.io/apis/brave-browser/search-api-images/) — Image search endpoint returning images with metadata, thumbnails, and SafeSearch filtering.
+- [Brave Search API - Video Search](https://apis.io/apis/brave-browser/search-api-videos/) — Video search endpoint returning videos with thumbnails, duration, and source metadata.
+- [Brave Search API - News Search](https://apis.io/apis/brave-browser/search-api-news/) — Real-time news search endpoint returning articles from trusted sources with freshness filtering.
+- [Brave Search API - Suggest](https://apis.io/apis/brave-browser/search-api-suggest/) — Autosuggest endpoint that returns query completions for a partial input.
+- [Brave Search API - Spellcheck](https://apis.io/apis/brave-browser/search-api-spellcheck/) — Spelling correction endpoint for refining noisy or misspelled user queries.
+- [Brave Search API - Summarizer](https://apis.io/apis/brave-browser/search-api-summarizer/) — AI summarizer endpoint that condenses search results into a generated summary for use in agentic and AI-grounded applications.
+- [Brave Search API - Local POIs](https://apis.io/apis/brave-browser/search-api-local-pois/) — Local search endpoint returning point-of-interest details given IDs surfaced by web search results.
+- [Brave Search API - Local Descriptions](https://apis.io/apis/brave-browser/search-api-local-descriptions/) — AI-generated descriptions for local points of interest, complementing the Local POIs endpoint.
+- [Brave Search MCP Server](https://apis.io/apis/brave-browser/search-mcp/) — Model Context Protocol server wrapping the Brave Search API so AI agents can ground answers in real-time web results.
+- [Brave Leo AI](https://apis.io/apis/brave-browser/leo/) — In-browser AI assistant offering chat, summarization, translation, and content generation grounded in the page or tab the user is viewing. Surfaced inside…
+- [Brave Talk](https://apis.io/apis/brave-browser/talk/) — End-to-end encrypted video conferencing product, available free with premium tier for larger meetings.
+- [Brave Rewards](https://apis.io/apis/brave-browser/rewards/) — Opt-in attention rewards program paying users in Basic Attention Token (BAT) for viewing privacy-preserving ads, and enabling tipping of verified creators.
+- [Brave Ads](https://apis.io/apis/brave-browser/ads/) — Privacy-respecting advertising platform for advertisers that targets anonymized cohorts inside the Brave browser and on Brave Search.
+- [Brave Wallet](https://apis.io/apis/brave-browser/wallet/) — Native multi-chain crypto wallet built into the Brave browser. Supports EVM and Solana networks; integrates with WalletConnect and dApps.
+- [Brave Images API](https://apis.io/apis/brave-browser/brave-browser-images-api/) — The Images API from Brave — 1 operation(s) for images.
+- [Brave Local API](https://apis.io/apis/brave-browser/brave-browser-local-api/) — The Local API from Brave — 2 operation(s) for local.
+- [Brave News API](https://apis.io/apis/brave-browser/brave-browser-news-api/) — The News API from Brave — 1 operation(s) for news.
+- [Brave Suggest API](https://apis.io/apis/brave-browser/brave-browser-suggest-api/) — The Suggest API from Brave — 1 operation(s) for suggest.
+- [Brave Summarizer API](https://apis.io/apis/brave-browser/brave-browser-summarizer-api/) — The Summarizer API from Brave — 1 operation(s) for summarizer.
+- [Brave Videos API](https://apis.io/apis/brave-browser/brave-browser-videos-api/) — The Videos API from Brave — 1 operation(s) for videos.
+- [Brave Web API](https://apis.io/apis/brave-browser/brave-browser-web-api/) — The Web API from Brave — 1 operation(s) for web.
+- [Brave News](https://apis.io/apis/brave-browser/news/) — Privacy-preserving news feed integrated into the browser's new tab page, sourced from a curated set of publisher feeds.
+- [Brave Ads API](https://apis.io/apis/brave-browser/brave-ads-api/) — API for managing and reporting on Brave Ads campaigns. Enables advertisers to retrieve campaign details and performance data for privacy-preserving native…
+- [Brave Spell Check API](https://apis.io/apis/brave-browser/brave-browser-spell-check-api/) — The Spell Check API from Brave — 1 operation(s) for spell check.
 
-## APIs
+### Published properties
 
-### Brave Browser
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Privacy-first Chromium-based browser for Windows, macOS, Linux, Android, and iOS, with built-in tracker and ad blocking (Brave Shields), HTTPS upgrades, Global Privacy Control, and a Tor-enabled private window on desktop. Open source under MPL-2.0.
+#### Agentic access (1)
 
-- **Human URL:** [https://brave.com/](https://brave.com/)
-- **Base URL:** `https://github.com/brave/brave-browser`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Brave Browser Agentic Access](https://apis.io/agentic-access/brave-browser/brave-browser-agentic-access/)
 
-- Browser
-- Chromium
-- Open Source
+#### Collections (9)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Repository](https://github.com/brave/brave-browser)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Brave Search API](https://apis.io/collections/brave-browser/open-brave-browser/)
+- [Brave Search Images API](https://apis.io/collections/brave-browser/open-brave-browser-images-api/)
+- [Brave Search Images Local API](https://apis.io/collections/brave-browser/open-brave-browser-local-api/)
+- [Brave Search Images News API](https://apis.io/collections/brave-browser/open-brave-browser-news-api/)
+- [Brave Search Images Spellcheck API](https://apis.io/collections/brave-browser/open-brave-browser-spellcheck-api/)
+- [Brave Search Images Suggest API](https://apis.io/collections/brave-browser/open-brave-browser-suggest-api/)
+- [Brave Search Images Summarizer API](https://apis.io/collections/brave-browser/open-brave-browser-summarizer-api/)
+- [Brave Search Images Videos API](https://apis.io/collections/brave-browser/open-brave-browser-videos-api/)
+- [Brave Search Images Web API](https://apis.io/collections/brave-browser/open-brave-browser-web-api/)
 
-### Brave Search
+#### Security (3)
 
-Independent privacy-respecting web search engine backed by Brave's own index. Surfaces the consumer product at search.brave.com and powers the Brave Search API.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://search.brave.com/](https://search.brave.com/)
-- **Base URL:** `https://search.brave.com/`
+- [Brave Browser Authentication](https://apis.io/security/brave-browser/brave-browser-authentication/)
+- [Brave Browser Domain Security](https://apis.io/security/brave-browser/brave-browser-domain-security/)
+- [Brave Browser Vulnerability Disclosure](https://apis.io/security/brave-browser/brave-browser-vulnerability-disclosure/)
 
-#### Tags
+#### Plans and pricing (1)
 
-- Search
-- Web
+Published plans, tiers and prices.
 
-#### Properties
+- [Brave Browser Plans Pricing](https://apis.io/plans/brave-browser/brave-browser-plans-pricing/)
 
-- [Website](https://search.brave.com/)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Rate limits (1)
 
-### Brave Search API - Web Search
+Published request limits.
 
-REST endpoint for general web search results with country, language, safe-search, and freshness filtering. Authenticated via X-Subscription-Token header.
+- [Brave Browser Rate Limits](https://apis.io/rate-limits/brave-browser/brave-browser-rate-limits/)
 
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/web/search`
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
-- Search API
-- Web Search
+- [Brave Browser Finops](https://apis.io/finops/brave-browser/brave-browser-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - Image Search
-
-Image search endpoint returning images with metadata, thumbnails, and SafeSearch filtering.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/images/search`
-
-#### Tags
-
-- Search API
-- Image Search
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - Video Search
-
-Video search endpoint returning videos with thumbnails, duration, and source metadata.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/videos/search`
-
-#### Tags
-
-- Search API
-- Video Search
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - News Search
-
-Real-time news search endpoint returning articles from trusted sources with freshness filtering.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/news/search`
-
-#### Tags
-
-- Search API
-- News
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - Suggest
-
-Autosuggest endpoint that returns query completions for a partial input.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/suggest/search`
-
-#### Tags
-
-- Search API
-- Autosuggest
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - Spellcheck
-
-Spelling correction endpoint for refining noisy or misspelled user queries.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/spellcheck/search`
-
-#### Tags
-
-- Search API
-- Spellcheck
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - Summarizer
-
-AI summarizer endpoint that condenses search results into a generated summary for use in agentic and AI-grounded applications.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/summarizer/search`
-
-#### Tags
-
-- Search API
-- Summarizer
-- AI
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - Local POIs
-
-Local search endpoint returning point-of-interest details given IDs surfaced by web search results.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/local/pois`
-
-#### Tags
-
-- Search API
-- Local
-- POI
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search API - Local Descriptions
-
-AI-generated descriptions for local points of interest, complementing the Local POIs endpoint.
-
-- **Human URL:** [https://api-dashboard.search.brave.com/app/documentation](https://api-dashboard.search.brave.com/app/documentation)
-- **Base URL:** `https://api.search.brave.com/res/v1/local/descriptions`
-
-#### Tags
-
-- Search API
-- Local
-- AI
-
-#### Properties
-
-- [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Search MCP Server
-
-Model Context Protocol server wrapping the Brave Search API so AI agents can ground answers in real-time web results.
-
-- **Human URL:** [https://github.com/brave/brave-search-mcp-server](https://github.com/brave/brave-search-mcp-server)
-- **Base URL:** `https://github.com/brave/brave-search-mcp-server`
-
-#### Tags
-
-- MCP
-- AI
-- Search
-
-#### Properties
-
-- [Repository](https://github.com/brave/brave-search-mcp-server)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Leo AI
-
-In-browser AI assistant offering chat, summarization, translation, and content generation grounded in the page or tab the user is viewing. Surfaced inside the browser; not a public REST API.
-
-- **Human URL:** [https://brave.com/leo/](https://brave.com/leo/)
-- **Base URL:** `https://brave.com/leo/`
-
-#### Tags
-
-- AI
-- Assistant
-
-#### Properties
-
-- [Website](https://brave.com/leo/)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Talk
-
-End-to-end encrypted video conferencing product, available free with premium tier for larger meetings.
-
-- **Human URL:** [https://brave.com/talk/](https://brave.com/talk/)
-- **Base URL:** `https://talk.brave.com/`
-
-#### Tags
-
-- Video
-- Conferencing
-
-#### Properties
-
-- [Website](https://brave.com/talk/)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Rewards
-
-Opt-in attention rewards program paying users in Basic Attention Token (BAT) for viewing privacy-preserving ads, and enabling tipping of verified creators.
-
-- **Human URL:** [https://brave.com/rewards/](https://brave.com/rewards/)
-- **Base URL:** `https://brave.com/rewards/`
-
-#### Tags
-
-- Rewards
-- BAT
-- Web3
-
-#### Properties
-
-- [Website](https://brave.com/rewards/)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Ads
-
-Privacy-respecting advertising platform for advertisers that targets anonymized cohorts inside the Brave browser and on Brave Search.
-
-- **Human URL:** [https://brave.com/brave-ads/](https://brave.com/brave-ads/)
-- **Base URL:** `https://brave.com/brave-ads/`
-
-#### Tags
-
-- Advertising
-- Privacy
-
-#### Properties
-
-- [Website](https://brave.com/brave-ads/)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Brave Wallet
-
-Native multi-chain crypto wallet built into the Brave browser. Supports EVM and Solana networks; integrates with WalletConnect and dApps.
-
-- **Human URL:** [https://brave.com/wallet/](https://brave.com/wallet/)
-- **Base URL:** `https://brave.com/wallet/`
-
-#### Tags
-
-- Wallet
-- Web3
-
-#### Properties
-
-- [Website](https://brave.com/wallet/)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-
-#### Tags
-
-- News
-- Content
-
-#### Properties
-
-- [Website](https://brave.com/brave-news/)
-- [Postman Collection](collections/brave-browser.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/brave-browser.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://brave.com/)
-- [Search](https://search.brave.com/)
 - [Documentation](https://api-dashboard.search.brave.com/app/documentation)
-- [Git Hub](https://github.com/brave)
-- [LinkedIn](https://www.linkedin.com/company/brave-software-)
-- [Twitter](https://twitter.com/brave)
+- [Pricing](https://ads.brave.com/)
+- [Blog](https://brave.com/blog/index.xml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 31.5** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 46.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 22.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 16.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/brave-browser/](https://apis.io/providers/brave-browser/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Brave: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/brave-browser/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
